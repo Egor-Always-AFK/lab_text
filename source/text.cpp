@@ -4,7 +4,7 @@ Text::Text()
 {
     angle = Point();
     font = Font{};
-    text = nullptr;
+    text = "(null)";
 }
 
 void Text::setPoint()
@@ -17,9 +17,9 @@ void Text::setPoint()
 
 void Text::output()
 {
-    std::cout << "Your text:\n";
+    std::cout << "\n\n\n\nYour text:\n";
     std::cout << angle;
-    std::cout << "\n\n";
+    std::cout << "\n-----\n";
     std::cout << font;
 }
 

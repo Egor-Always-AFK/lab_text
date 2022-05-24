@@ -7,7 +7,7 @@ SRCS = source/color.cpp source/font.cpp \
 		main.cpp \
 
 HEADER = includes/color.hpp includes/font.hpp \
-		includes/main_header.hpp includes/point.hpp \
+		includes/rectangle.hpp includes/point.hpp \
 		includes/text.hpp \
 
 OBJS = $(SRCS:.c = .o)

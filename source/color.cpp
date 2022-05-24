@@ -46,7 +46,7 @@ uint8_t Color::getRed()
 
 std::ostream& operator << (std::ostream& out, const Color& color)
 {
-    std::cout << (int)color.red << ' ' << (int)color.green << ' ' << (int)color.blue;
+    std::cout << "\n-----\nred = " << (int)color.red << "\ngreen = " << (int)color.green << "\nblue = " << (int)color.blue << "\n";
     return out;
 }
 

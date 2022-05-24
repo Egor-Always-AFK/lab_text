@@ -24,7 +24,7 @@ void Point::setY(int y_coord)
 
 std::ostream& operator << (std::ostream& out, const Point& point)
 {
-	std::cout << "Angle coordinates:\nx = " << point.x_coord << "\ny = " << point.y_coord << "\n";
+	std::cout << "Angle coordinates:\nx = " << point.x_coord << "\ny = " << point.y_coord;
 	return out;
 }
 
