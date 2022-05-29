@@ -1,11 +1,11 @@
 #include "includes/text.hpp"
-#include "includes/color.hpp"
 
 int main()
 {
 	Text text;
 
 	text.input();
-	text.output();
+	std::cout << "\n\n\n\nYour text:\n" << text.ToString();
+
 	return 0;
 }

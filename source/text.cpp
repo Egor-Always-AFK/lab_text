@@ -2,29 +2,31 @@
 
 Text::Text()
 {
-    angle = Point();
-    font = Font{};
-    text = "(null)";
+	angle = Point();
+	font = Font{};
+	text = "(null)";
 }
 
 void Text::setPoint()
 {
-    Point point;
+	Point point;
 
-    std::cin >> point;
-    this->angle = point;
-}
-
-void Text::output()
-{
-    std::cout << "\n\n\n\nYour text:\n";
-    std::cout << angle;
-    std::cout << "\n-----\n";
-    std::cout << font;
+	std::cin >> point;
+	this->angle = point;
 }
 
 void Text::input()
 {
-    setPoint();
-    font.customization();
+	setPoint();
+	font.customization();
+}
+
+std::string Text::ToString()
+{
+    std::ostringstream ostream;
+
+	ostream << angle;
+	ostream << font;
+
+    return ostream.str();
 }

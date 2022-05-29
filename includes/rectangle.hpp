@@ -8,7 +8,6 @@ class Rectangle
 {
 public:
 	virtual void input() = 0;
-	virtual void output() = 0;
 };
 
 #endif

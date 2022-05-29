@@ -49,7 +49,7 @@ void Font::customization()
 
 std::ostream& operator << (std::ostream& out, const Font& font)
 {
-	std::cout << "Font name: " << font.font_name;
+	std::cout << "\n\nFont name: " << font.font_name;
 	std::cout << "\nFont size: " << font.size_of_font;
 	std::cout << font.color;
 
